@@ -1,0 +1,36 @@
+\documentclass[a4paper]{report}
+
+
+%----- Package français
+\usepackage[utf8]{inputenc} %reconnaissance des accents
+\usepackage[francais]{babel} %document en français
+\usepackage[T1]{fontenc} %codage des fonts TeX ?
+
+%----- code ex: \BlankLine
+\usepackage[french,lined,boxed,commentsnumbered]
+{algorithm2e}
+
+
+%----- math
+\usepackage{amsmath}
+
+
+\title{Complexité}
+
+
+\begin{document}
+
+\chapter*{Max-Cut}
+
+
+\section{ Montrer que max-cut est dans NP }
+On se donne une solution de Max-Cut:\\
+Les sommets du graph on été réparti dans deuc ensembles, U et V. 
+Pour vérifier que la solution est juste, on doit vérifier:\\
+$ \forall x \in $ U (resp. V), $ x $ a plus de voisins dans V (resp. U) que dans U (resp. V)\\
+Cette algorithme de vérification est bien en temps polynomiale, donc on a bien:\\
+Max-Cut $ \in $ NP\\
+
+\section{ Montrer que Max-Cut $ \leq_p $ NTE }
+
+\end{document}
